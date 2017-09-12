@@ -27,5 +27,6 @@ public class DemoServlet extends HttpServlet {
       throws IOException {
     resp.setContentType("text/plain");
     resp.getWriter().println("{ \"name\": \"World\" }");
+    resp.sendRedirect("localhost:8080");
   }
 }
